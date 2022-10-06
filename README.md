@@ -6,13 +6,13 @@ A system including many GIS functions, like buffer analysis, vector-raster conve
 I optimized the system by Model-View-ViewModel mode and separated it by 3 module, namely Map(map and interaction), Json(handling and managing Geojson files) and Attribute(responsible for Geojson files’ attributes data), in this way putting data and logic handling apart, thus reducing the system’ s coupling. I used JSON.stringify to read shapefile files and beautify library reshape the data and construct an object called geojson with common-used attributes, thus made it more convenient to get related data or attributes. 
 
 ## Demo
-![draw](demoimgs/draw.png)
+![draw](draw.png)
 
-![symbols](demoimgs/symbols.png)
+![symbols](symbols.png)
 
-![matrix](demoimgs/matrix.png)
+![matrix](matrix.png)
 
-![quadtree](demoimgs/quadtree.png)
+![quadtree](quadtree.png)
 
-![turf](demoimgs/turf.png)
+![turf](turf.png)
 
