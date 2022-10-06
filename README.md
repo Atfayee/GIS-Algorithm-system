@@ -1,27 +1,18 @@
 # GisAlgorithmCourseOne
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
+## Background
+A system including many GIS functions, like buffer analysis, vector-raster conversion, and users can try many GIS algorithm on it such as Douglas-Peuker, quardtree, rtree, delaunay-voronoi. My job is to complete all the algorithms using Typescript/Javascript. 
 
-## Development server
+I optimized the system by Model-View-ViewModel mode and separated it by 3 module, namely Map(map and interaction), Json(handling and managing Geojson files) and Attribute(responsible for Geojson files’ attributes data), in this way putting data and logic handling apart, thus reducing the system’ s coupling. I used JSON.stringify to read shapefile files and beautify library reshape the data and construct an object called geojson with common-used attributes, thus made it more convenient to get related data or attributes. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Demo
+![draw](demoimgs/draw.png)
 
-## Code scaffolding
+![symbols](demoimgs/symbols.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![matrix](demoimgs/matrix.png)
 
-## Build
+![quadtree](demoimgs/quadtree.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![turf](demoimgs/turf.png)
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
